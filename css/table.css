@@ -1,0 +1,36 @@
+.table1{
+    width:100%;/*画面の最大幅に合わせる*/
+    text-align:center;/*テーブル内のテキストを中央寄せ*/
+    font-weight:bold;/*テーブル内のテキスト太字*/
+    border-collapse:collapse;/*セル同士の枠線を重ねる*/
+    border:2px solid #e0e0e0;/*テーブル周りに枠線をつける*/
+    overflow:scroll;/*画面をはみ出す場合はスクロールバーを表示*/
+    white-space:nowrap;/*テーブル内の文字を改行しない*/
+    }
+    .table1::-webkit-scrollbar{
+     height:9px;/*スクロールバーの太さ*/
+    }
+    .table1::-webkit-scrollbar-track{
+     background:#f1f1f1;/*スクロールバーの背景色*/
+    }
+    .table1::-webkit-scrollbar-thumb {
+     background:#8e8e8e;/*スクロールバーのカラー*/
+    border-radius:4px;/*スクロールバーの角に丸みをつける*/
+    }
+
+    .table1 th{
+        color:#000;/*テキストカラー*/
+        background:#f7f7f7!important;/*背景カラー*/
+        font-size:17px;/*フォントサイズ*/
+        padding:1px;/*内側余白調整*/
+        border:solid 2px #e8e8e8;/*見出し周りのボーダー線*/
+        }
+
+        .table1 td{
+            border:solid 2px #e0e0e0;/*見出し外セル(td)の枠線*/
+            padding:7px;/*セル内に余白を空ける*/
+            font-size:15px;/*フォントサイズ*/
+            }
+.setumei {
+    width: 600px;
+    }

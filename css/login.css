@@ -1,0 +1,108 @@
+@charset 'utf-8';
+body{
+    background: #fffff5;
+}
+/* div.loginform {
+	width: 500px;
+	margin: 120px auto 0;
+	height: 200px;
+}
+
+div.loginform table.login_t{
+	width: 100%;
+	font-size: 1.2em;
+	font-weight: 600;
+	height: 140px;
+	margin-bottom: 30px;
+	margin-top: 30px;
+}
+
+p.btn {
+	text-align: center;
+}
+
+div.loginform table.login_t input{
+	width: 80%;
+	height: 25px;
+}
+
+button.loginbtn{
+	margin-right:20px;
+}
+
+div#container {
+	width:40%;
+} */
+
+#container {
+  position: relative;
+  height: 100vh;
+  margin: auto !important;
+}
+
+.wrapper {    
+	position: absolute;
+  top: 35%;
+  left: 50%;
+  -webkit-transform : translate(-50%,-50%);
+  transform : translate(-50%,-50%);
+  width: 400px;
+}
+
+.form-signin {
+  max-width: 420px;
+  padding: 10px 30px 30px 30px;
+  margin: 0 auto;
+  border: 1px solid rgba(0,0,0,0.1);  
+}
+
+.form-signin-heading {
+  text-align:center;
+  margin-bottom: 30px;
+}
+
+.form-control {
+  position: relative;
+  font-size: 16px;
+  height: auto;
+  padding: 10px;
+}
+
+input[type="text"] {
+  margin-bottom: 40px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+input[type="password"] {
+  margin-bottom: 20px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+.transferQr {
+  max-width: 420px;
+  margin: 0 auto;
+  text-align: right;
+}
