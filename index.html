@@ -1,0 +1,83 @@
+<!-- bootstrap.html -->
+<html>
+
+
+<head>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/news.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/3_配列操作.css">
+</head>
+
+<script type="text/javascript" src="js/array.js"></script>
+<script type="text/javascript" src="js/3_配列操作.js"></script>
+
+
+<body>
+    <div>
+        <div class="navbar-fixed-top">
+            <div class="title_header">
+                <div class="title_n">社内PGプラットフォーム</div>
+            </div>
+        </div>
+
+        <div class="container">
+            <p style="padding-top: 5px;">
+            <p>・配列に要素を追加</p>
+            <button class="btn btn-secondary" onclick="random_10times()">1</button>
+            <button class="btn btn-secondary" onclick="change()">2</button>
+            <button class="btn btn-secondary" onclick="random()">3</button>
+            <button class="btn btn-secondary" onclick="random()">4</button>
+            <button class="btn btn-secondary" onclick="random()">5</button>
+            </p>
+            <div class="row">
+                <div class="col-4">
+                    <p style="padding-top: 20px;">〇5</p>
+                    <p style="display: flex; justify-content: flex-end; padding-right: 10px;" id="count_txt"> 0個</p>
+                    <div style="width: 100%; height:400px;overflow-y:scroll;background-color:#F5F5F5">
+                        <ul id="txt5"></ul>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <p style="padding-top: 20px;">〇4</p>
+                    <p style="display: flex; justify-content: flex-end; padding-right: 10px;" id="count_txt"> 0個</p>
+                    <div style="width: 100%; height:400px;overflow-y:scroll;background-color:#F5F5F5">
+                        <ul id="txt4"></ul>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <p style="padding-top: 20px;">〇1,2,3</p>
+                    <p style="display: flex; justify-content: flex-end; padding-right: 10px;" id="count_txt"> 0個</p>
+                    <div style="width: 100%; height:400px;overflow-y:scroll;background-color:#F5F5F5">
+                        <p>〇3</p>
+                        <ul id="txt3"></ul>
+                        <p>〇2</p>
+                        <ul id="txt2"></ul>
+                        <p>〇1</p>
+                        <ul id="txt1"></ul>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row" style="padding-top: 50px;">
+
+                <div style="width: 100%; height:150px;overflow-y:scroll;background-color:#F5F5F5">
+                    <p>ログ（抽選結果）</p>
+                    <ul id="data_log"></ul>
+                </div>
+            </div>
+            <div class="row" style="padding-top: 50px;">
+                <div style="width: 100%; height:150px;overflow-y:scroll;background-color:#F5F5F5">
+                    <p>ログ（自動合成）</p>
+                    <ul id="data_log_auto"></ul>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
