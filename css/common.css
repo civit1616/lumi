@@ -12,6 +12,15 @@ div.title_header {
     box-shadow: 0 1px 8px rgba(0,0,0,0.2);
 }
 
+div.title_header2 {
+    width:100%;
+    height:40px;
+    background:#ccdbff   ;
+    display: flex;
+	align-items: center;
+    color:#6e7b99;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.2);
+}
 div.fixed_header {
     overflow: hidden;
 }

@@ -19,7 +19,7 @@
     <div>
         <div class="navbar-fixed-top">
             <div class="title_header">
-                <div class="title_n">社内PGプラットフォーム</div>
+                <div class="title_n">シミュレーション</div>
             </div>
         </div>
 
@@ -28,47 +28,44 @@
 
             <p style="padding-top: 3px;">
 
-            <div class="navbar-fixed-top navbar-light">
-                <div class="title_header2">
-                    <div class="title_n" id="banner"></div>
-                </div>
-            </div>
 
             <p style="padding-top: 2px;"></p>
 
             <p>・配列に要素を追加</p>
-            <button class="btn btn-secondary" onclick="random_10times()">1</button>
-            <button class="btn btn-secondary" onclick="change()">2</button>
-            <button class="btn btn-secondary" onclick="random()">3</button>
-            <button class="btn btn-secondary" onclick="random()">4</button>
-            <button class="btn btn-secondary" onclick="random()">5</button>
+            <!-- 残：ボタンのクリック回数カウント -->
+            <button class="btn btn-secondary" onclick="random_10times()">抽選</button>
+
+
             </p>
 
             <div class="row">
 
-                <div class="col-4">
+                <div class="col-6">
 
-                    <p style="padding-top: 20px;">〇5</p>
-                    <p style="display: flex; justify-content: flex-end; padding-right: 10px;" id="count_txt"> 0個</p>
+                    <p style="padding-top: 20px;"></p>
                     <div style="width: 100%; height:400px;overflow-y:scroll;background-color:#F5F5F5">
-                        <ul id="txt5"></ul>
+                        <p>〇合成画面</p>
+                        <!-- 残：右欄のチェックボックスと連動させる -->
+                        <p>・１</p>
+                        <p>・２</p>
+                        <p>・３</p>
+                        <!-- 残：ボタンを下寄せにする -->
+                        <!-- 残：ボタンクリックでモーダルウィンドウ出現 -->
+                        <button class="btn btn-secondary" onclick="choice_3()">合成</button>
+                        <!-- 残：チェックの解除、HTMLのリセット -->
+                        <button class="btn btn-secondary" onclick="choice_3()">リセット</button>
                     </div>
 
                 </div>
-                <div class="col-4">
 
-                    <p style="padding-top: 20px;">〇4</p>
-                    <p style="display: flex; justify-content: flex-end; padding-right: 10px;" id="count_txt"> 0個</p>
-                    <div style="width: 100%; height:400px;overflow-y:scroll;background-color:#F5F5F5">
-                        <ul id="txt4"></ul>
-                    </div>
-                </div>
 
-                <div class="col-4">
+                <div class="col-6">
 
-                    <p style="padding-top: 20px;">〇1,2,3</p>
-                    <p style="display: flex; justify-content: flex-end; padding-right: 10px;" id="count_txt"> 0個</p>
+                    <p style="padding-top: 20px;"></p>
                     <div style="width: 100%; height:400px;overflow-y:scroll;background-color:#F5F5F5;">
+                        <!-- 残：左欄の処理との連携 -->
+                        <p>〇5</p>
+                        <p>〇4</p>
                         <p>〇3</p>
                         <ul id="txt3"></ul>
                         <p>〇2</p>
@@ -76,24 +73,28 @@
                         <p>〇1</p>
                         <ul id="txt1"></ul>
                     </div>
-                    <button class="btn btn-secondary" onclick="choice_3()">選択</button>
 
                 </div>
 
             </div>
 
+            <div class="row" style="padding-top: 50px;">
+
+                <div style="width: 100%; height:150px;overflow-y:scroll;background-color:#F5F5F5">
+                    <p>ログ（合成結果）</p>
+                    <ul id="data_log_auto"></ul>
+                    <!-- 残：手動合成のログ -->
+                </div>
+
+
+            </div>
             <div class="row" style="padding-top: 50px;">
 
                 <div style="width: 100%; height:150px;overflow-y:scroll;background-color:#F5F5F5">
                     <p>ログ（抽選結果）</p>
                     <ul id="data_log"></ul>
                 </div>
-            </div>
-            <div class="row" style="padding-top: 50px;">
-                <div style="width: 100%; height:150px;overflow-y:scroll;background-color:#F5F5F5">
-                    <p>ログ（自動合成）</p>
-                    <ul id="data_log_auto"></ul>
-                </div>
+
             </div>
 
         </div>

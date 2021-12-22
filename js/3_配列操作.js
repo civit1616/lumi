@@ -114,7 +114,7 @@ function random_10times() {
     var child = document.createElement('li');
     log_str = "";
     log_str = "★3：(成功)" + String(success[1]) + "回、(失敗)" + String(failure[1]) + "回、★2：(成功)" + String(success[0]) + "回、(失敗)" + String(failure[0]) + "回";
-    child.innerHTML = "[ " + date1.toLocaleString() + " ] ＜合成結果＞" + log_str;
+    child.innerHTML = "[ " + date1.toLocaleString() + " ] ＜自動合成＞" + log_str;
     list.prepend(child);
 
 }
