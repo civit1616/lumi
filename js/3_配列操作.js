@@ -1,5 +1,5 @@
 const GROUP_NUM = 5
-
+var total_num = 0
 const GACHA_LOOP_NUM = 10
 const RAND_NUM = 100
 const GACHA = ['★1', '★2', '★3', '★4', '★5']
@@ -96,6 +96,11 @@ function random_10times() {
         }
     }
 
+    // トータル値の反映
+    total_num = total_num + 1;
+    var total_num_dom = document.getElementById('total_random');
+    total_num_dom.innerHTML = "合計" + String(total_num * 10) + "+" + String(total_num) + "連, " + String(total_num * 8000) + "ギア, " + String(total_num * 2200) + "円";
+
     // データログ（抽選結果）
     /// 親要素取得
     var list = document.getElementById('data_log');
@@ -125,8 +130,9 @@ function set_table_element(group_num, child_element_num) {
     var str_id = "★" + String(group_num + 1) + "_" + String(child_element_num + 1);
     input1.type = "checkbox";
     input1.name = str_id;
+    input1.className = "checkbox";
     input1.value = str_id;
-    input1.id = str_id;
+    input1.id = (child_element_num + 1) * 10 + group_num + 1;
     var text1 = document.createTextNode(str_id); // HTMLページに表示されるテキスト
     var Label1 = document.createElement("label");
     Label1.htmlFor = input1.id;
