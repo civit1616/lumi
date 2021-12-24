@@ -367,6 +367,7 @@ $(function () {
             }
         }
         if (check1 == 4) {
+            var num = Math.floor(Math.random() * 100)
             if (num < 20) {
                 // 成功, 次のレアのHTML作成
                 // 成功, 次のレアのHTML作成
@@ -462,7 +463,7 @@ $(function () {
 
         /// 合計失敗、成功数をHTMLで書き出し
         var dom1 = document.getElementById('lumi4_txt');
-        dom1.innerHTML = "★4チャレ成功：" + String(total_suc3) + ", ★4チャレ成功：" + String(total_miss3);
+        dom1.innerHTML = "★4チャレ成功：" + String(total_suc3) + ", ★4チャレ失敗：" + String(total_miss3);
         var dom2 = document.getElementById('lumi5_txt');
         dom2.innerHTML = "★5チャレ成功：" + String(total_suc4) + ", ★5チャレ失敗：" + String(total_miss4);
 
