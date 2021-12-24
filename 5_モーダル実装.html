@@ -11,11 +11,10 @@
     <link rel="stylesheet" href="css/5_modal.css">
 
 </head>
-
+<script type="text/javascript" src='js/jquery-3.4.1.js'></script>
 <script type="text/javascript" src="js/array.js"></script>
 <script type="text/javascript" src="js/3_配列操作.js"></script>
 <script type="text/javascript" src="js/3_合成.js"></script>
-<script type="text/javascript" src='js/jquery-3.4.1.js'></script>
 <script type="text/javascript" src="js/4_チェックボックスのID取得.js"></script>
 
 
@@ -38,7 +37,9 @@
 
 
             <p style="padding-top: 2px;"></p>
-            <p>・抽選ボタンをクリック</p>
+            <p>・抽選ボタンをクリック（※星２以下は自動合成されます）</p>
+            <p id="lumi4_txt"></p>
+            <p id="lumi5_txt"></p>
             <p style="float: right;" id="total_random">合計 0連 0ギア 0円</p>
             <button class="btn btn-secondary" onclick="random_10times()">抽選</button>
 
@@ -68,7 +69,7 @@
                                 <div class="modal-close"></div>
                                 <!-- モーダル内のコンテンツ -->
                                 <div class="modal-content">
-                                    <p>文章が入ります。</p>
+                                    <p id="modal_txt"></p>
                                 </div>
                             </div>
                         </div>
@@ -85,7 +86,9 @@
                         <!-- 残：左欄の処理との連携 -->
                         <!-- 残：成功 0回　失敗 0回のように累計値を表示する -->
                         <p>〇5</p>
+                        <ul id="txt5"></ul>
                         <p>〇4</p>
+                        <ul id="txt4"></ul>
                         <p>〇3</p>
                         <ul id="txt3"></ul>
                         <p>〇2</p>
